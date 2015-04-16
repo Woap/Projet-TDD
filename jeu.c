@@ -61,7 +61,7 @@ void affiche_grille(grille *x,joueur *q)
 
 void lecture_grille(grille *x,joueur *p)
 {
-    int n,m;
+    int n=0,m=0;
     FILE *fd;
     int lecture = 0;
     char temp[1];
@@ -175,5 +175,18 @@ void free_grille(grille *x)
 		}
 
     free(x->grille);
+}
+
+int nb_case_nvide(grille *x)
+{
+    int i,j;
+    int nb_case=0;
+    for ( i = 0 ; i < x->n ; i++)
+        for ( j=0 ; j < x->m ; j++)
+            if ( x->grille[i][j] != 0 )
+            {
+                nb_case++;
+            }
+    return nb_case;
 }
 

@@ -21,7 +21,6 @@ int main()
         affiche_grille(&s,&j);
     }
     endwin();
-
 	
     free_grille(&s);
 	

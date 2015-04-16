@@ -69,4 +69,10 @@ void init_joueur( joueur *p);
 */
 void free_grille(grille *x);
 
+/**
+* @brief renvoie le nombre de cases non vides
+* @param grille *x -> adresse  d'une grille quelconque
+*/
+int nb_case_nvide(grille *x);
+
 #endif
