@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Référence du fichier jeu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Généré par Doxygen 1.7.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+--></script>
+<div id="top">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<h1>Référence du fichier jeu.h</h1>  </div>
+</div>
+<div class="contents">
+
+<p>fonctionnalit� du jeu  
+<a href="#_details">Plus de détails...</a></p>
+
+<p><a href="jeu_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjoueur.html">joueur</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgrille.html">grille</a></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8h.html#a7b2a5d5e22122bc32b9ec570d066d2d1">new_grille</a> (<a class="el" href="structgrille.html">grille</a> *x, int n, int m)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">cr�er une nouvelle grille  <a href="#a7b2a5d5e22122bc32b9ec570d066d2d1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8h.html#ab0c400637bfb605ed5110bf1e2e95562">init_grille</a> (<a class="el" href="structgrille.html">grille</a> *x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">initialise une grille  <a href="#ab0c400637bfb605ed5110bf1e2e95562"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8h.html#a37855f36204a3f9436e4cd6b45cfe760">affiche_grille</a> (<a class="el" href="structgrille.html">grille</a> *x, <a class="el" href="structjoueur.html">joueur</a> *q)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">affichage d'une grille ( INDICATION VALEUR : 0=VIDE / 1=MUR / 2=PIEGE )  <a href="#a37855f36204a3f9436e4cd6b45cfe760"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8h.html#ae4ecabd94ddb9e480192549f35b608fb">lecture_grille</a> (<a class="el" href="structgrille.html">grille</a> *x, <a class="el" href="structjoueur.html">joueur</a> *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">lecture fichier texte  <a href="#ae4ecabd94ddb9e480192549f35b608fb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8h.html#af46f85e94c7dc6fbf74155a7d5466598">deplacer_joueur</a> (<a class="el" href="structgrille.html">grille</a> *x, <a class="el" href="structjoueur.html">joueur</a> *j)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">deplacement du joueur  <a href="#af46f85e94c7dc6fbf74155a7d5466598"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8h.html#aaf509d64917dac5ed8955391fec7f5ad">init_joueur</a> (<a class="el" href="structjoueur.html">joueur</a> *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">initialisation des points du joueur  <a href="#aaf509d64917dac5ed8955391fec7f5ad"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8h.html#a4c8d49df0e378572197bd44acf6eb294">free_grille</a> (<a class="el" href="structgrille.html">grille</a> *x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">lib�re la grille  <a href="#a4c8d49df0e378572197bd44acf6eb294"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p>fonctionnalit� du jeu </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>ibis ibrahim </dd></dl>
+<dl class="date"><dt><b>Date:</b></dt><dd>11/04/2015 </dd></dl>
+</div><hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a37855f36204a3f9436e4cd6b45cfe760"></a><!-- doxytag: member="jeu.h::affiche_grille" ref="a37855f36204a3f9436e4cd6b45cfe760" args="(grille *x, joueur *q)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affiche_grille </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgrille.html">grille</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjoueur.html">joueur</a> *&#160;</td>
+          <td class="paramname"><em>q</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>affichage d'une grille ( INDICATION VALEUR : 0=VIDE / 1=MUR / 2=PIEGE ) </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>x -&gt; une grille quelconque </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> i,j,s=0;
+    x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[q-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>][q-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>]=9;
+    mvprintw(0,0,<span class="stringliteral">&quot;VIE: %d&quot;</span>,q-&gt;<a class="code" href="structjoueur.html#a623831cc0419112730f8640707e5d591">vie</a>);
+    mvprintw(1,0,<span class="stringliteral">&quot;ATT: %d | DEF : %d &quot;</span>,q-&gt;<a class="code" href="structjoueur.html#ad0dbba5328652121f6d1d846d8eed8ca">att</a>,q-&gt;<a class="code" href="structjoueur.html#a6f1d119dbd0cefe5caf9d7b36fe74286">def</a>);
+
+    <span class="keywordflow">for</span> ( i= 0 ; i &lt; x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a> ; i++)
+        mvprintw(2,i+1,<span class="stringliteral">&quot;-&quot;</span>);
+
+
+    <span class="keywordflow">for</span> ( i = 0 ; i &lt; (x-&gt;<a class="code" href="structgrille.html#a0d450c14ba04184cb1c15d3a5d30e538">m</a>) ; i++ )
+    {
+        
+        <span class="keywordflow">for</span> ( j = 0 ; j &lt; (x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a>) ; j++ )
+        {
+                        mvprintw(i+3,0,<span class="stringliteral">&quot;|&quot;</span>);
+            mvprintw(i+3,j+1,<span class="stringliteral">&quot;%d&quot;</span>,x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[i][j]);
+                        mvprintw(i+3,x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a>+1,<span class="stringliteral">&quot;|&quot;</span>);
+        }
+        
+    }
+
+    <span class="keywordflow">for</span> ( i= 0 ; i &lt; x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a> ; i++)
+        mvprintw(x-&gt;<a class="code" href="structgrille.html#a0d450c14ba04184cb1c15d3a5d30e538">m</a>+3,i+1,<span class="stringliteral">&quot;-&quot;</span>);
+        
+    refresh();
+
+
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="af46f85e94c7dc6fbf74155a7d5466598"></a><!-- doxytag: member="jeu.h::deplacer_joueur" ref="af46f85e94c7dc6fbf74155a7d5466598" args="(grille *x, joueur *j)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deplacer_joueur </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgrille.html">grille</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjoueur.html">joueur</a> *&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>deplacement du joueur </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>*x -&gt; adresse d'une grille quelconque / joueur *j -&gt; adresse d'un joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> key;
+    key=0;
+    key = getch() ;
+    
+
+    <span class="keywordflow">switch</span>(key)
+    {
+    <span class="keywordflow">case</span> <span class="charliteral">&#39;q&#39;</span>: <span class="comment">//GAUCHE</span>
+        <span class="keywordflow">if</span> (j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>-1 &lt; 0)
+            <span class="keywordflow">break</span>;
+        <span class="keywordflow">if</span> (x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>-1] == 1 )
+            <span class="keywordflow">break</span>;
+        <span class="keywordflow">if</span> (x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>-1] == 2 )
+            j-&gt;<a class="code" href="structjoueur.html#a623831cc0419112730f8640707e5d591">vie</a>--;
+
+        x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>]=0;
+        j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>--;
+
+        <span class="keywordflow">break</span>;
+
+    <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>: <span class="comment">//DROITE</span>
+        <span class="keywordflow">if</span> (j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>+1 &gt; x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a>-1)
+            <span class="keywordflow">break</span>;
+        <span class="keywordflow">if</span> (x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>+1] == 1 )
+            <span class="keywordflow">break</span>;
+        <span class="keywordflow">if</span> (x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>+1] == 2 )
+            j-&gt;<a class="code" href="structjoueur.html#a623831cc0419112730f8640707e5d591">vie</a>--;
+
+        x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>]=0;
+        j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>++;
+        <span class="keywordflow">break</span>;
+    <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>: <span class="comment">// BAS</span>
+        <span class="keywordflow">if</span> (j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>+1 &gt; x-&gt;<a class="code" href="structgrille.html#a0d450c14ba04184cb1c15d3a5d30e538">m</a>-1)
+            <span class="keywordflow">break</span>;
+        <span class="keywordflow">if</span> (x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>+1][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>] == 1 )
+            <span class="keywordflow">break</span>;
+        <span class="keywordflow">if</span> (x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>+1][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>] == 2 )
+            j-&gt;<a class="code" href="structjoueur.html#a623831cc0419112730f8640707e5d591">vie</a>--;
+
+        x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>]=0;
+        j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>++;
+        <span class="keywordflow">break</span>;
+    <span class="keywordflow">case</span> <span class="charliteral">&#39;z&#39;</span>: <span class="comment">//HAUT</span>
+        <span class="keywordflow">if</span> (j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>-1 &lt; 0)
+            <span class="keywordflow">break</span>;
+        <span class="keywordflow">if</span> (x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>-1][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>] == 1 )
+            <span class="keywordflow">break</span>;
+        <span class="keywordflow">if</span> (x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>-1][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>] == 2 )
+            j-&gt;<a class="code" href="structjoueur.html#a623831cc0419112730f8640707e5d591">vie</a>--;
+
+        x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>][j-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>]=0;
+        j-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>--;
+        <span class="keywordflow">break</span>;
+    }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a4c8d49df0e378572197bd44acf6eb294"></a><!-- doxytag: member="jeu.h::free_grille" ref="a4c8d49df0e378572197bd44acf6eb294" args="(grille *x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_grille </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgrille.html">grille</a> *&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>lib�re la grille </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>x -&gt; une grille quelconque </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> i;
+        printf(<span class="stringliteral">&quot;%d&quot;</span>,x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a>);
+    <span class="keywordflow">for</span> ( i = 0 ; i &lt; (x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a>) ; i ++ )
+                {
+                                free(x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[i]);
+                }
+
+    free(x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ab0c400637bfb605ed5110bf1e2e95562"></a><!-- doxytag: member="jeu.h::init_grille" ref="ab0c400637bfb605ed5110bf1e2e95562" args="(grille *x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_grille </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgrille.html">grille</a> *&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>initialise une grille </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>x -&gt; une grille quelconque </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>retourne une grille initialis� � 0 </dd></dl>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> i,j;
+    <span class="keywordflow">for</span> ( i=0 ; i &lt; (x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a>) ; i++ )
+    {
+        <span class="keywordflow">for</span> ( j=0 ; j &lt; (x-&gt;<a class="code" href="structgrille.html#a0d450c14ba04184cb1c15d3a5d30e538">m</a>) ; j++ )
+        {
+            x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[i][j]=0;
+        }
+    }
+
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aaf509d64917dac5ed8955391fec7f5ad"></a><!-- doxytag: member="jeu.h::init_joueur" ref="aaf509d64917dac5ed8955391fec7f5ad" args="(joueur *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_joueur </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoueur.html">joueur</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>initialisation des points du joueur </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joueur</td><td>*p -&gt; adresse d'un joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><pre class="fragment">{
+    p-&gt;<a class="code" href="structjoueur.html#ad0dbba5328652121f6d1d846d8eed8ca">att</a>=1;
+    p-&gt;<a class="code" href="structjoueur.html#a6f1d119dbd0cefe5caf9d7b36fe74286">def</a>=1;
+    p-&gt;<a class="code" href="structjoueur.html#a623831cc0419112730f8640707e5d591">vie</a>=5;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ae4ecabd94ddb9e480192549f35b608fb"></a><!-- doxytag: member="jeu.h::lecture_grille" ref="ae4ecabd94ddb9e480192549f35b608fb" args="(grille *x, joueur *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lecture_grille </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgrille.html">grille</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjoueur.html">joueur</a> *&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>lecture fichier texte </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>*x -&gt; adresse d'une grille quelconque / joueur *p -&gt; adresse d'un joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> n,m;
+    FILE *fd;
+    <span class="keywordtype">int</span> lecture = 0;
+    <span class="keywordtype">char</span> temp[1];
+    <span class="keywordtype">int</span> i,j;
+    <span class="keywordtype">int</span> nombre=0;
+
+    fd= fopen(<span class="stringliteral">&quot;grille1.txt&quot;</span>,<span class="stringliteral">&quot;r&quot;</span>);
+
+    <span class="keywordflow">if</span> ( fd == NULL )
+    {
+        perror(<span class="stringliteral">&quot;Erreur ouverture grille&quot;</span>);
+        exit (1);
+    }
+
+    fscanf(fd,<span class="stringliteral">&quot;%d %d&quot;</span>,&amp;n,&amp;m); <span class="comment">// taille de la grille</span>
+    <a class="code" href="jeu_8c.html#a7b2a5d5e22122bc32b9ec570d066d2d1" title="cr�er une nouvelle grille">new_grille</a>(x,n,m);
+    <a class="code" href="jeu_8c.html#ab0c400637bfb605ed5110bf1e2e95562" title="initialise une grille">init_grille</a>(x);
+        
+
+    fscanf(fd,<span class="stringliteral">&quot;%d %d &quot;</span>,&amp;(p-&gt;<a class="code" href="structjoueur.html#aaa541c8593f28952f87830e62d7b6cdb">posx</a>),&amp;(p-&gt;<a class="code" href="structjoueur.html#a2a922d0ae09278cd0d36cd75b2ea965e">posy</a>)); <span class="comment">// position du joueur</span>
+
+    <span class="keywordflow">for</span> ( i=0 ; i &lt; x-&gt;<a class="code" href="structgrille.html#a0d450c14ba04184cb1c15d3a5d30e538">m</a> ; i ++)
+    {
+        <span class="keywordflow">for</span> ( j=0 ; j &lt; x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a>; j++)
+        {
+
+            lecture = fgetc(fd);
+            fgetc(fd);
+            sprintf(temp,<span class="stringliteral">&quot;%c&quot;</span>,lecture);
+            nombre= atoi(temp);
+            x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[i][j] = nombre;
+        }
+    }
+        
+        fclose(fd);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a7b2a5d5e22122bc32b9ec570d066d2d1"></a><!-- doxytag: member="jeu.h::new_grille" ref="a7b2a5d5e22122bc32b9ec570d066d2d1" args="(grille *x, int n, int m)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void new_grille </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgrille.html">grille</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>cr�er une nouvelle grille </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>n) -&gt; ligne de la grille / (int m) -&gt; colonne de la grille </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>retourne une grille de taille n*m </dd></dl>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">int</span> i;
+    x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a>=n;
+    x-&gt;<a class="code" href="structgrille.html#a0d450c14ba04184cb1c15d3a5d30e538">m</a>=m;
+    x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>=(<span class="keywordtype">int</span> **) malloc ((x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a>)*<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>*));
+    <span class="keywordflow">for</span> ( i=0 ; i &lt; x-&gt;<a class="code" href="structgrille.html#ada80899d753be91b4633250e9a6aef32">n</a> ; i++ )
+        x-&gt;<a class="code" href="structgrille.html#aa7c85d23ba63f8a498d4f28dd6a77e66">grille</a>[i]=(<span class="keywordtype">int</span>*) malloc ((x-&gt;<a class="code" href="structgrille.html#a0d450c14ba04184cb1c15d3a5d30e538">m</a>)*<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));
+}
+</pre></div>
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Généré le Thu Apr 16 2015 20:04:12 par&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
+</body>
+</html>
