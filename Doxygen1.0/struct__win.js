@@ -1,0 +1,28 @@
+var struct__win =
+[
+    [ "_attrs", "struct__win.html#ac87ac7ed6924b2340bc0e2b0310c62b6", null ],
+    [ "_begx", "struct__win.html#a63c47a6d1ed6e4582844aca804d86f64", null ],
+    [ "_begy", "struct__win.html#a469f3d57aeb19a6e6ee4152e562c8544", null ],
+    [ "_bkgd", "struct__win.html#aeb1f8fbed8a728a0164b820a58dc02b3", null ],
+    [ "_bmarg", "struct__win.html#a13fc6284f29d69c3b597db930f4dae7e", null ],
+    [ "_clear", "struct__win.html#a0cfb10fd89920e72ccce4bce0b3ba975", null ],
+    [ "_curx", "struct__win.html#a627897ae4d6aa9b364b4e8dc73f218b1", null ],
+    [ "_cury", "struct__win.html#ac6ef2b4cbee34d618e6c5f52a5e94615", null ],
+    [ "_delayms", "struct__win.html#afc110b8e7c442b493bd7e11b75114910", null ],
+    [ "_firstch", "struct__win.html#ae7f8c79d415dd900ebfa1eaf881af37c", null ],
+    [ "_flags", "struct__win.html#aa4a61b1d913f2bee1e0ed5d9daf26549", null ],
+    [ "_immed", "struct__win.html#af78863fb3e8bf5caf29c2f782b409d2b", null ],
+    [ "_lastch", "struct__win.html#a9966058e444bf9df96c1be31b5eaf8a7", null ],
+    [ "_leaveit", "struct__win.html#ab9d0d4f121015a0370406037ea64d67c", null ],
+    [ "_maxx", "struct__win.html#a4f6e29c9eec3a79914d72a0eb8f5a2d7", null ],
+    [ "_maxy", "struct__win.html#a896efe13718ef3984d99d34792909b16", null ],
+    [ "_nodelay", "struct__win.html#a14af68ba59a7e495f73edfe05fb070b4", null ],
+    [ "_parent", "struct__win.html#a6fee25347bb4d67f17a09376b584c104", null ],
+    [ "_parx", "struct__win.html#a16b7f27a8562855ae483efb8424e2618", null ],
+    [ "_pary", "struct__win.html#a42ad333b49b114c1be97698f742e5299", null ],
+    [ "_scroll", "struct__win.html#a1acef983a186b3fa81fb31eba14c4686", null ],
+    [ "_sync", "struct__win.html#aff02028faa1beb59e2f6e939fca7205a", null ],
+    [ "_tmarg", "struct__win.html#a6e58a08b68eb9e2d38fc6ace7594bf50", null ],
+    [ "_use_keypad", "struct__win.html#ac8b16896b3e0a197065438eba4abd08d", null ],
+    [ "_y", "struct__win.html#a76c23efa4b47b83f4fc09c6c147cef0e", null ]
+];

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['pair_5fcontent',['pair_content',['../curses_8h.html#acb47dc6e37f0ae8df45197c541cf8345',1,'curses.h']]],
+  ['panel_5fabove',['panel_above',['../panel_8h.html#a90fdba038055ac0e964439cdddda063c',1,'panel.h']]],
+  ['panel_5fbelow',['panel_below',['../panel_8h.html#a3fa80e03cb27b0d1671d560368d58940',1,'panel.h']]],
+  ['panel_5fhidden',['panel_hidden',['../panel_8h.html#acf82f1ef107cd368b0913233d06d357d',1,'panel.h']]],
+  ['panel_5fuserptr',['panel_userptr',['../panel_8h.html#a1c25eaf82db50cf911ff73111addb15a',1,'panel.h']]],
+  ['panel_5fwindow',['panel_window',['../panel_8h.html#ad64f4e8fd6cfc312536daf41f39f44c8',1,'panel.h']]],
+  ['pdc_5fclearclipboard',['PDC_clearclipboard',['../curses_8h.html#a38c504b63c82e00921e105d50416c0b0',1,'curses.h']]],
+  ['pdc_5fdebug',['PDC_debug',['../curses_8h.html#a99dfca82cc2310a51118d64238cdde30',1,'curses.h']]],
+  ['pdc_5ffreeclipboard',['PDC_freeclipboard',['../curses_8h.html#a3c5d1d9359b00e1ecc5577e3fda102bf',1,'curses.h']]],
+  ['pdc_5fget_5finput_5ffd',['PDC_get_input_fd',['../curses_8h.html#a97ab6110b659035da61b5187a99bd57d',1,'curses.h']]],
+  ['pdc_5fget_5fkey_5fmodifiers',['PDC_get_key_modifiers',['../curses_8h.html#ab6a69d1318745ca48b570aa70f4a82a8',1,'curses.h']]],
+  ['pdc_5fgetclipboard',['PDC_getclipboard',['../curses_8h.html#a920445e7d9b0e1e051d86e28c4acc0f0',1,'curses.h']]],
+  ['pdc_5freturn_5fkey_5fmodifiers',['PDC_return_key_modifiers',['../curses_8h.html#ac19309d9f818778a824a901bd534f2a3',1,'curses.h']]],
+  ['pdc_5fsave_5fkey_5fmodifiers',['PDC_save_key_modifiers',['../curses_8h.html#a56a24e423061d2c45aa06585a2a8e5af',1,'curses.h']]],
+  ['pdc_5fset_5fblink',['PDC_set_blink',['../curses_8h.html#aca4f72bb7900ad1d395569bec3ad1bfa',1,'curses.h']]],
+  ['pdc_5fset_5fline_5fcolor',['PDC_set_line_color',['../curses_8h.html#a4d4c82d9e143d3a50fbd26a19616c1e3',1,'curses.h']]],
+  ['pdc_5fset_5ftitle',['PDC_set_title',['../curses_8h.html#a33de6c7a0763f4ed8b7229ed2ee3f520',1,'curses.h']]],
+  ['pdc_5fsetclipboard',['PDC_setclipboard',['../curses_8h.html#adf86312b1bd08a93e25fa32d183cef2a',1,'curses.h']]],
+  ['pdc_5fungetch',['PDC_ungetch',['../curses_8h.html#a3cc9f98538ea6d008f774abce55e30bc',1,'curses.h']]],
+  ['pechochar',['pechochar',['../curses_8h.html#a1d705bd0f73058518130ed5863383b01',1,'curses.h']]],
+  ['pnoutrefresh',['pnoutrefresh',['../curses_8h.html#aadad3314be208ab4c7060789db068277',1,'curses.h']]],
+  ['prefresh',['prefresh',['../curses_8h.html#a34259c8c4558ee6b2bcbe3a6d783bcde',1,'curses.h']]],
+  ['printw',['printw',['../curses_8h.html#a9ff8c95db1170ee249ed916999bfc79a',1,'curses.h']]],
+  ['putwin',['putwin',['../curses_8h.html#a34d2f9d000a24e9f4fcc8b571a505d2c',1,'curses.h']]]
+];

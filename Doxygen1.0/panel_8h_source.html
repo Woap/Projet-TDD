@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>Laby1.0:  Fichier source de include/panel.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Laby1.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">panel.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="panel_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Public Domain Curses */</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/* $Id: panel.h,v 1.19 2008/07/13 16:08:16 wmcbrine Exp $ */</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">/*----------------------------------------------------------------------*</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *                         Panels for PDCurses                          *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *----------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef __PDCURSES_PANEL_H__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define __PDCURSES_PANEL_H__ 1</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="curses_8h.html">curses.h</a>&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#if defined(__cplusplus) || defined(__cplusplus__) || defined(__CPLUSPLUS)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structpanelobs.html">   19</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpanelobs.html">panelobs</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structpanelobs.html#aaec17ed213334e4b5adc6d5b6f817ecb">   21</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structpanelobs.html">panelobs</a> *<a class="code" href="structpanelobs.html#aaec17ed213334e4b5adc6d5b6f817ecb">above</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">   22</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structpanel.html">panel</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <a class="code" href="panel_8h.html#a6a6c4828bee1a31d225915d7fc02941e">PANELOBS</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structpanel.html">   25</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpanel.html">panel</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structpanel.html#a09d962b38c0d24e36078d717d2a6ed96">   27</a></span>&#160;    <a class="code" href="struct__win.html">WINDOW</a> *<a class="code" href="structpanel.html#a09d962b38c0d24e36078d717d2a6ed96">win</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structpanel.html#a9c6e1df3036a5c01cfb2196fa49940d9">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpanel.html#a9c6e1df3036a5c01cfb2196fa49940d9">wstarty</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structpanel.html#a5dfa0d08ce959c355613c41c8794f8ea">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpanel.html#a5dfa0d08ce959c355613c41c8794f8ea">wendy</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structpanel.html#ae71dc66b796c51066667361aec59af04">   30</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpanel.html#ae71dc66b796c51066667361aec59af04">wstartx</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structpanel.html#aaddd55b344806f5b07b69b500d7993c9">   31</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpanel.html#aaddd55b344806f5b07b69b500d7993c9">wendx</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structpanel.html#a7b3ce3a97cd3976be0909ea9c107fb77">   32</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structpanel.html">panel</a> *<a class="code" href="structpanel.html#a7b3ce3a97cd3976be0909ea9c107fb77">below</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structpanel.html#a3727675fc9b3ae6cc8f8f9fdc4bb6802">   33</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structpanel.html">panel</a> *<a class="code" href="structpanel.html#a3727675fc9b3ae6cc8f8f9fdc4bb6802">above</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structpanel.html#a96e9f71ced37cb1a6cafb45fa9a199b5">   34</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">void</span> *<a class="code" href="structpanel.html#a96e9f71ced37cb1a6cafb45fa9a199b5">user</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structpanel.html#ac8c5bd6051077b20fac46ba549f0f116">   35</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structpanelobs.html">panelobs</a> *<a class="code" href="structpanel.html#ac8c5bd6051077b20fac46ba549f0f116">obscure</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <a class="code" href="panel_8h.html#ad3df4725421ec41359505ae2fd0b273d">PANEL</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">int</span>     <a class="code" href="panel_8h.html#aad04150fe01a097a07854382352a85d8">bottom_panel</a>(<a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">int</span>     <a class="code" href="panel_8h.html#ac1f8068f3b75931925262980b0f59efe">del_panel</a>(<a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">int</span>     <a class="code" href="panel_8h.html#aed713513ae93c7127b460eacf5d1051a">hide_panel</a>(<a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">int</span>     <a class="code" href="panel_8h.html#ad0b75203f37f62e8dcd06ede9e6ee3b0">move_panel</a>(<a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>, <span class="keywordtype">int</span> starty, <span class="keywordtype">int</span> startx);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="structpanel.html">PANEL</a>  *<a class="code" href="panel_8h.html#a6506dbeb8dea095d16ded7545486622d">new_panel</a>(<a class="code" href="struct__win.html">WINDOW</a> *win);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="structpanel.html">PANEL</a>  *<a class="code" href="panel_8h.html#a90fdba038055ac0e964439cdddda063c">panel_above</a>(<span class="keyword">const</span> <a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="structpanel.html">PANEL</a>  *<a class="code" href="panel_8h.html#a3fa80e03cb27b0d1671d560368d58940">panel_below</a>(<span class="keyword">const</span> <a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">int</span>     <a class="code" href="panel_8h.html#acf82f1ef107cd368b0913233d06d357d">panel_hidden</a>(<span class="keyword">const</span> <a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">const</span> <span class="keywordtype">void</span> *<a class="code" href="panel_8h.html#a1c25eaf82db50cf911ff73111addb15a">panel_userptr</a>(<span class="keyword">const</span> <a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="struct__win.html">WINDOW</a> *<a class="code" href="panel_8h.html#ad64f4e8fd6cfc312536daf41f39f44c8">panel_window</a>(<span class="keyword">const</span> <a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">int</span>     <a class="code" href="panel_8h.html#aed37e73a656ba8bc3619c8927062ef2f">replace_panel</a>(<a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>, <a class="code" href="struct__win.html">WINDOW</a> *win);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">int</span>     <a class="code" href="panel_8h.html#a94fc73c03a4050d69621918e02822cc4">set_panel_userptr</a>(<a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>, <span class="keyword">const</span> <span class="keywordtype">void</span> *uptr);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">int</span>     <a class="code" href="panel_8h.html#a906faafe8e7740bef308a163984fe7a6">show_panel</a>(<a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">int</span>     <a class="code" href="panel_8h.html#a0c9b92061d7773f02b2744baedf84a9a">top_panel</a>(<a class="code" href="structpanel.html">PANEL</a> *<a class="code" href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">pan</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="panel_8h.html#a2ca90825e0e5fe8706a6876ba7664815">update_panels</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#if defined(__cplusplus) || defined(__cplusplus__) || defined(__CPLUSPLUS)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __PDCURSES_PANEL_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="curses_8h_html"><div class="ttname"><a href="curses_8h.html">curses.h</a></div></div>
+<div class="ttc" id="panel_8h_html_a90fdba038055ac0e964439cdddda063c"><div class="ttname"><a href="panel_8h.html#a90fdba038055ac0e964439cdddda063c">panel_above</a></div><div class="ttdeci">PANEL * panel_above(const PANEL *pan)</div></div>
+<div class="ttc" id="panel_8h_html_ad64f4e8fd6cfc312536daf41f39f44c8"><div class="ttname"><a href="panel_8h.html#ad64f4e8fd6cfc312536daf41f39f44c8">panel_window</a></div><div class="ttdeci">WINDOW * panel_window(const PANEL *pan)</div></div>
+<div class="ttc" id="panel_8h_html_aed37e73a656ba8bc3619c8927062ef2f"><div class="ttname"><a href="panel_8h.html#aed37e73a656ba8bc3619c8927062ef2f">replace_panel</a></div><div class="ttdeci">int replace_panel(PANEL *pan, WINDOW *win)</div></div>
+<div class="ttc" id="structpanel_html_a5dfa0d08ce959c355613c41c8794f8ea"><div class="ttname"><a href="structpanel.html#a5dfa0d08ce959c355613c41c8794f8ea">panel::wendy</a></div><div class="ttdeci">int wendy</div><div class="ttdef"><b>Definition:</b> panel.h:29</div></div>
+<div class="ttc" id="structpanelobs_html_aaec17ed213334e4b5adc6d5b6f817ecb"><div class="ttname"><a href="structpanelobs.html#aaec17ed213334e4b5adc6d5b6f817ecb">panelobs::above</a></div><div class="ttdeci">struct panelobs * above</div><div class="ttdef"><b>Definition:</b> panel.h:21</div></div>
+<div class="ttc" id="panel_8h_html_a3fa80e03cb27b0d1671d560368d58940"><div class="ttname"><a href="panel_8h.html#a3fa80e03cb27b0d1671d560368d58940">panel_below</a></div><div class="ttdeci">PANEL * panel_below(const PANEL *pan)</div></div>
+<div class="ttc" id="panel_8h_html_ad3df4725421ec41359505ae2fd0b273d"><div class="ttname"><a href="panel_8h.html#ad3df4725421ec41359505ae2fd0b273d">PANEL</a></div><div class="ttdeci">struct panel PANEL</div></div>
+<div class="ttc" id="structpanel_html_a7b3ce3a97cd3976be0909ea9c107fb77"><div class="ttname"><a href="structpanel.html#a7b3ce3a97cd3976be0909ea9c107fb77">panel::below</a></div><div class="ttdeci">struct panel * below</div><div class="ttdef"><b>Definition:</b> panel.h:32</div></div>
+<div class="ttc" id="structpanel_html_a3727675fc9b3ae6cc8f8f9fdc4bb6802"><div class="ttname"><a href="structpanel.html#a3727675fc9b3ae6cc8f8f9fdc4bb6802">panel::above</a></div><div class="ttdeci">struct panel * above</div><div class="ttdef"><b>Definition:</b> panel.h:33</div></div>
+<div class="ttc" id="panel_8h_html_a94fc73c03a4050d69621918e02822cc4"><div class="ttname"><a href="panel_8h.html#a94fc73c03a4050d69621918e02822cc4">set_panel_userptr</a></div><div class="ttdeci">int set_panel_userptr(PANEL *pan, const void *uptr)</div></div>
+<div class="ttc" id="panel_8h_html_acf82f1ef107cd368b0913233d06d357d"><div class="ttname"><a href="panel_8h.html#acf82f1ef107cd368b0913233d06d357d">panel_hidden</a></div><div class="ttdeci">int panel_hidden(const PANEL *pan)</div></div>
+<div class="ttc" id="panel_8h_html_a6a6c4828bee1a31d225915d7fc02941e"><div class="ttname"><a href="panel_8h.html#a6a6c4828bee1a31d225915d7fc02941e">PANELOBS</a></div><div class="ttdeci">struct panelobs PANELOBS</div></div>
+<div class="ttc" id="panel_8h_html_ad0b75203f37f62e8dcd06ede9e6ee3b0"><div class="ttname"><a href="panel_8h.html#ad0b75203f37f62e8dcd06ede9e6ee3b0">move_panel</a></div><div class="ttdeci">int move_panel(PANEL *pan, int starty, int startx)</div></div>
+<div class="ttc" id="struct__win_html"><div class="ttname"><a href="struct__win.html">_win</a></div><div class="ttdef"><b>Definition:</b> curses.h:236</div></div>
+<div class="ttc" id="structpanel_html"><div class="ttname"><a href="structpanel.html">panel</a></div><div class="ttdef"><b>Definition:</b> panel.h:25</div></div>
+<div class="ttc" id="panel_8h_html_a0c9b92061d7773f02b2744baedf84a9a"><div class="ttname"><a href="panel_8h.html#a0c9b92061d7773f02b2744baedf84a9a">top_panel</a></div><div class="ttdeci">int top_panel(PANEL *pan)</div></div>
+<div class="ttc" id="structpanel_html_aaddd55b344806f5b07b69b500d7993c9"><div class="ttname"><a href="structpanel.html#aaddd55b344806f5b07b69b500d7993c9">panel::wendx</a></div><div class="ttdeci">int wendx</div><div class="ttdef"><b>Definition:</b> panel.h:31</div></div>
+<div class="ttc" id="panel_8h_html_ac1f8068f3b75931925262980b0f59efe"><div class="ttname"><a href="panel_8h.html#ac1f8068f3b75931925262980b0f59efe">del_panel</a></div><div class="ttdeci">int del_panel(PANEL *pan)</div></div>
+<div class="ttc" id="structpanel_html_a09d962b38c0d24e36078d717d2a6ed96"><div class="ttname"><a href="structpanel.html#a09d962b38c0d24e36078d717d2a6ed96">panel::win</a></div><div class="ttdeci">WINDOW * win</div><div class="ttdef"><b>Definition:</b> panel.h:27</div></div>
+<div class="ttc" id="structpanel_html_ae71dc66b796c51066667361aec59af04"><div class="ttname"><a href="structpanel.html#ae71dc66b796c51066667361aec59af04">panel::wstartx</a></div><div class="ttdeci">int wstartx</div><div class="ttdef"><b>Definition:</b> panel.h:30</div></div>
+<div class="ttc" id="panel_8h_html_a906faafe8e7740bef308a163984fe7a6"><div class="ttname"><a href="panel_8h.html#a906faafe8e7740bef308a163984fe7a6">show_panel</a></div><div class="ttdeci">int show_panel(PANEL *pan)</div></div>
+<div class="ttc" id="panel_8h_html_aad04150fe01a097a07854382352a85d8"><div class="ttname"><a href="panel_8h.html#aad04150fe01a097a07854382352a85d8">bottom_panel</a></div><div class="ttdeci">int bottom_panel(PANEL *pan)</div></div>
+<div class="ttc" id="panel_8h_html_aed713513ae93c7127b460eacf5d1051a"><div class="ttname"><a href="panel_8h.html#aed713513ae93c7127b460eacf5d1051a">hide_panel</a></div><div class="ttdeci">int hide_panel(PANEL *pan)</div></div>
+<div class="ttc" id="panel_8h_html_a1c25eaf82db50cf911ff73111addb15a"><div class="ttname"><a href="panel_8h.html#a1c25eaf82db50cf911ff73111addb15a">panel_userptr</a></div><div class="ttdeci">const void * panel_userptr(const PANEL *pan)</div></div>
+<div class="ttc" id="structpanelobs_html"><div class="ttname"><a href="structpanelobs.html">panelobs</a></div><div class="ttdef"><b>Definition:</b> panel.h:19</div></div>
+<div class="ttc" id="structpanelobs_html_aa9df4ee5359f2b6cbb0239f80aa32afc"><div class="ttname"><a href="structpanelobs.html#aa9df4ee5359f2b6cbb0239f80aa32afc">panelobs::pan</a></div><div class="ttdeci">struct panel * pan</div><div class="ttdef"><b>Definition:</b> panel.h:22</div></div>
+<div class="ttc" id="structpanel_html_a9c6e1df3036a5c01cfb2196fa49940d9"><div class="ttname"><a href="structpanel.html#a9c6e1df3036a5c01cfb2196fa49940d9">panel::wstarty</a></div><div class="ttdeci">int wstarty</div><div class="ttdef"><b>Definition:</b> panel.h:28</div></div>
+<div class="ttc" id="panel_8h_html_a2ca90825e0e5fe8706a6876ba7664815"><div class="ttname"><a href="panel_8h.html#a2ca90825e0e5fe8706a6876ba7664815">update_panels</a></div><div class="ttdeci">void update_panels(void)</div></div>
+<div class="ttc" id="panel_8h_html_a6506dbeb8dea095d16ded7545486622d"><div class="ttname"><a href="panel_8h.html#a6506dbeb8dea095d16ded7545486622d">new_panel</a></div><div class="ttdeci">PANEL * new_panel(WINDOW *win)</div></div>
+<div class="ttc" id="structpanel_html_a96e9f71ced37cb1a6cafb45fa9a199b5"><div class="ttname"><a href="structpanel.html#a96e9f71ced37cb1a6cafb45fa9a199b5">panel::user</a></div><div class="ttdeci">const void * user</div><div class="ttdef"><b>Definition:</b> panel.h:34</div></div>
+<div class="ttc" id="structpanel_html_ac8c5bd6051077b20fac46ba549f0f116"><div class="ttname"><a href="structpanel.html#ac8c5bd6051077b20fac46ba549f0f116">panel::obscure</a></div><div class="ttdeci">struct panelobs * obscure</div><div class="ttdef"><b>Definition:</b> panel.h:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 14 Mai 2015 21:53:49 pour Laby1.0 par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>Laby2.0: Référence du fichier C:/Users/Ibrahim/Desktop/Labo/src/fonction_jeu.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="link_down.bmp"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Laby2.0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('fonction__jeu_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier fonction_jeu.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;SDL/SDL.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_s_d_l__image_8h_source.html">SDL_image.h</a>&quot;</code><br />
+<code>#include &lt;SDL/SDL_ttf.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="jeu_8h_source.html">../include/jeu.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aa48454b0aa52cf6dcbaf6cb5cd79a365"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction__jeu_8c.html#aa48454b0aa52cf6dcbaf6cb5cd79a365">VIE_MAX</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:aa48454b0aa52cf6dcbaf6cb5cd79a365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:aaf509d64917dac5ed8955391fec7f5ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction__jeu_8c.html#aaf509d64917dac5ed8955391fec7f5ad">init_joueur</a> (<a class="el" href="structjoueur.html">joueur</a> *p)</td></tr>
+<tr class="memdesc:aaf509d64917dac5ed8955391fec7f5ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialise le joueur  <a href="#aaf509d64917dac5ed8955391fec7f5ad">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aaf509d64917dac5ed8955391fec7f5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e4c769c8991f3ffbfdccd2d29b2c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction__jeu_8c.html#ab8e4c769c8991f3ffbfdccd2d29b2c70">init_mob</a> (<a class="el" href="structmob.html">mob</a> *m)</td></tr>
+<tr class="memdesc:ab8e4c769c8991f3ffbfdccd2d29b2c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialise le monstre statique  <a href="#ab8e4c769c8991f3ffbfdccd2d29b2c70">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab8e4c769c8991f3ffbfdccd2d29b2c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9329839c9a4ac8aa6a30f40a6f2ce26f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction__jeu_8c.html#a9329839c9a4ac8aa6a30f40a6f2ce26f">init_mobv2</a> (<a class="el" href="structmob.html">mob</a> *m)</td></tr>
+<tr class="memdesc:a9329839c9a4ac8aa6a30f40a6f2ce26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialise le monstre qui bouge  <a href="#a9329839c9a4ac8aa6a30f40a6f2ce26f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9329839c9a4ac8aa6a30f40a6f2ce26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b50711f9db85e482924ffaad7d15ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction__jeu_8c.html#af5b50711f9db85e482924ffaad7d15ea">pause</a> (SDL_Surface *screen, <a class="el" href="structjoueur.html">joueur</a> *j)</td></tr>
+<tr class="separator:af5b50711f9db85e482924ffaad7d15ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd07ca32b2e1ed082778ce71b1a0d95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction__jeu_8c.html#acfd07ca32b2e1ed082778ce71b1a0d95">combat</a> (<a class="el" href="structjoueur.html">joueur</a> *j)</td></tr>
+<tr class="memdesc:acfd07ca32b2e1ed082778ce71b1a0d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">combat entre joueur et monstre statique  <a href="#acfd07ca32b2e1ed082778ce71b1a0d95">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acfd07ca32b2e1ed082778ce71b1a0d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca93ab0cd9f58a1bb1e3f52977c50010"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction__jeu_8c.html#aca93ab0cd9f58a1bb1e3f52977c50010">combat2</a> (<a class="el" href="structjoueur.html">joueur</a> *j, <a class="el" href="structmob.html">mob</a> *nb)</td></tr>
+<tr class="memdesc:aca93ab0cd9f58a1bb1e3f52977c50010"><td class="mdescLeft">&#160;</td><td class="mdescRight">combat entre joueur et monstre qui bouge  <a href="#aca93ab0cd9f58a1bb1e3f52977c50010">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aca93ab0cd9f58a1bb1e3f52977c50010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31044302280c0ec9eca89286f81127af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fonction__jeu_8c.html#a31044302280c0ec9eca89286f81127af">rand_a_b</a> (int a, int b)</td></tr>
+<tr class="memdesc:a31044302280c0ec9eca89286f81127af"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie un entier al�atoire  <a href="#a31044302280c0ec9eca89286f81127af">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a31044302280c0ec9eca89286f81127af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="aa48454b0aa52cf6dcbaf6cb5cd79a365"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIE_MAX&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="acfd07ca32b2e1ed082778ce71b1a0d95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int combat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoueur.html">joueur</a> *&#160;</td>
+          <td class="paramname"><em>j</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>combat entre joueur et monstre statique </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(joueur</td><td>*j) -&gt; pointeur sur le joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>retourne 0 si victoire sinon 1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aca93ab0cd9f58a1bb1e3f52977c50010"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int combat2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoueur.html">joueur</a> *&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmob.html">mob</a> *&#160;</td>
+          <td class="paramname"><em>nb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>combat entre joueur et monstre qui bouge </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(joueur</td><td>*p) -&gt; pointeur sur le joueur, (mob *nb) -&gt; pointeur sur monstre </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>retourne 0 si victoire sinon 1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaf509d64917dac5ed8955391fec7f5ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_joueur </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjoueur.html">joueur</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initialise le joueur </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(joueur</td><td>*p) -&gt; pointeur sur le joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8e4c769c8991f3ffbfdccd2d29b2c70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_mob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmob.html">mob</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initialise le monstre statique </p>
+<p>initialise le joueur</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(mob</td><td>*m) -&gt; pointeur sur le monstre</td></tr>
+    <tr><td class="paramname">(mob</td><td>*m) -&gt; pointeur sur le joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9329839c9a4ac8aa6a30f40a6f2ce26f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_mobv2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmob.html">mob</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initialise le monstre qui bouge </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(mob</td><td>*p) -&gt; pointeur sur le monstre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af5b50711f9db85e482924ffaad7d15ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pause </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>screen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjoueur.html">joueur</a> *&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a31044302280c0ec9eca89286f81127af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rand_a_b </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>renvoie un entier al�atoire </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(int</td><td>a) -&gt; valeur min / (int b) -&gt; valeur max </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5d2a4431e832420aef39efbc8fb7e978.html">Labo</a></li><li class="navelem"><a class="el" href="dir_dd4c8cc76c0fc4135de4d0c77cfba003.html">src</a></li><li class="navelem"><a class="el" href="fonction__jeu_8c.html">fonction_jeu.c</a></li>
+    <li class="footer">Généré le Jeudi 14 Mai 2015 21:59:59 pour Laby2.0 par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
