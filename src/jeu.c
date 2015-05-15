@@ -22,11 +22,11 @@ int jeu(joueur *j, grille *s,mob *un, mob *deux)
     /**
     * @brief Initialisation des variables SDL et chargements des images
     */
-    SDL_Surface *screen,*sprite_left,*sprite_down,*sprite_up,*sprite_right, *backbg, *wall, *fire, *life, *texte,*tableau,*mob,*mob2,*mob3,*objectif,*epee,*bouclier,*potion;
+    SDL_Surface *screen,*sprite_left,*sprite_down,*sprite_up,*sprite_right, *backbg, *wall, *fire,*over,*win,*life,*texte,*tableau,*mob,*mob2,*mob3,*objectif,*epee,*bouclier,*potion;
     SDL_Rect rcSprite, rcGrass, rcWall, rcFire,rcLife,rcMob,rcObj,position,rcPotion,rcEpee,rcBouclier,rcMob2,rcMob3;
     SDL_Event event;
     Uint8 *keystate;
-    int colorkey, gameover,move,val=-1,resultat,deadun=0,deadeux=0;
+    int colorkey, gameover,move,val=-1,resultat,deadun=0,deadeux=0,fin=1;
 
     TTF_Init();
     TTF_Font *police = NULL;
@@ -57,7 +57,8 @@ int jeu(joueur *j, grille *s,mob *un, mob *deux)
     epee= IMG_Load("../src/img/epee.bmp");
     mob2= IMG_Load("../src/img/mob2.bmp");
     mob3= IMG_Load("../src/img/mob2.bmp");
-
+    over= IMG_Load("../src/img/over.bmp");
+    win= IMG_Load("../src/img/win.bmp");
     colorkey= SDL_MapRGB(screen->format, 0, 0, 0);
     SDL_SetColorKey(sprite_left, SDL_SRCCOLORKEY | SDL_RLEACCEL, colorkey);
     SDL_SetColorKey(sprite_down, SDL_SRCCOLORKEY | SDL_RLEACCEL, colorkey);
@@ -72,7 +73,6 @@ int jeu(joueur *j, grille *s,mob *un, mob *deux)
     SDL_SetColorKey(epee, SDL_SRCCOLORKEY | SDL_RLEACCEL, colorkey);
     SDL_SetColorKey(bouclier, SDL_SRCCOLORKEY | SDL_RLEACCEL, colorkey);
     SDL_SetColorKey(potion, SDL_SRCCOLORKEY | SDL_RLEACCEL, colorkey);
-
 
 
     rcSprite.x = j->posx * SPRITE_SIZE ;
@@ -164,7 +164,7 @@ int jeu(joueur *j, grille *s,mob *un, mob *deux)
                         }
                         else
                         {
-                            val = 2;
+                            val = 1;
                             gameover=1;
                         }
                     }
@@ -243,8 +243,8 @@ int jeu(joueur *j, grille *s,mob *un, mob *deux)
                     }
                     if ( s->grille[(rcSprite.x/32)][rcSprite.y/32] == 5 )
                     {
-                        gameover=1;
-                        val=0;
+                        gameover=0;
+                        val=2;
                     }
                     if ( s->grille[rcSprite.x/32][rcSprite.y/32] == 6 )
                     {
@@ -305,7 +305,7 @@ int jeu(joueur *j, grille *s,mob *un, mob *deux)
                     if ( s->grille[(rcSprite.x/32)][rcSprite.y/32] == 5 )
                     {
                         gameover=1;
-                        val=0;
+                        val=2;
                     }
                     if ( s->grille[rcSprite.x/32][rcSprite.y/32] == 6 )
                     {
@@ -365,7 +365,7 @@ int jeu(joueur *j, grille *s,mob *un, mob *deux)
                     if ( s->grille[(rcSprite.x/32)][(rcSprite.y/32)] == 5 )
                     {
                         gameover=1;
-                        val=0;
+                        val=2;
                     }
                     if ( s->grille[rcSprite.x/32][rcSprite.y/32] == 6 )
                     {
@@ -421,14 +421,14 @@ int jeu(joueur *j, grille *s,mob *un, mob *deux)
                         }
                         else
                         {
-                            val = 2;
+                            val = 1;
                             gameover=1;
                         }
                     }
                     if ( s->grille[rcSprite.x/32][rcSprite.y/32] == 5 )
                     {
                         gameover=1;
-                        val=3;
+                        val=2;
                     }
                     if ( s->grille[rcSprite.x/32][rcSprite.y/32] == 6 )
                     {
@@ -658,7 +658,35 @@ int jeu(joueur *j, grille *s,mob *un, mob *deux)
             SDL_UpdateRect(screen,0,0,0,0);
         }
     }
-
+    
+    if ( val == 0)
+    {
+    position.x = 0;
+    position.y = 0;
+    SDL_BlitSurface(over,NULL, screen, &position);
+    SDL_UpdateRect(screen,0,0,0,0);
+    }
+    else
+    {
+    position.x = 0;
+    position.y = 0;
+    SDL_BlitSurface(win,NULL, screen, &position);
+    SDL_UpdateRect(screen,0,0,0,0);
+    }
+    
+    while (fin == 1 )
+    {
+        if (SDL_PollEvent(&event))
+        {
+            switch (event.type)
+            {
+            case SDL_KEYDOWN:
+              fin=0;
+              break;
+            }
+        }
+    }
+    
     /**< Libération de la mémoire */
     SDL_FreeSurface(sprite_right);
     SDL_FreeSurface(sprite_left);
@@ -675,7 +703,10 @@ int jeu(joueur *j, grille *s,mob *un, mob *deux)
     SDL_FreeSurface(epee);
     SDL_FreeSurface(bouclier);
     SDL_FreeSurface(potion);
-
+    SDL_FreeSurface(win);
+    SDL_FreeSurface(over);
+    
+   
     free_grille(s);
     TTF_CloseFont(police);
     TTF_CloseFont(police2);

@@ -34,6 +34,8 @@ int main(int argc, char *argv[])
             lecture_grille(&s,&j,&un,&deux);
             jeu(&j,&s,&un,&deux);
             break;
+        case 2:
+            break;
         default:
             break;
         }
